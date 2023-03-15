@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="be850abd-3620-48a3-b410-5ba063d761c0" name="Changes" comment="file generation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/primaryColorSheet.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/assets/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/assets/World.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/states/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/states/GameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/utils/FileGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/utils/FileGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/utils/FileToStringLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/utils/FileToStringLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/utils/WorldGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/utils/WorldGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gfx/assets/WorldTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gfx/assets/WorldTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gfx/utils/ImageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gfx/utils/ImageHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,14 +92,7 @@
       <option name="project" value="LOCAL" />
       <updated>1677785322773</updated>
     </task>
-    <task id="LOCAL-00003" summary="file generation">
-      <created>1677873801557</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1677873801557</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,11 +118,6 @@
           <properties class="java.io.IOException" package="java.io" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/game/states/GameState.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

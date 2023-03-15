@@ -36,45 +36,49 @@ public class ImageHandler {
     private void createWorldTiles() {
         BufferedImage primaryColorSheet = ImageLoader.loadImage("/primaryColorSheet.png");
 
-        BufferedImage clear = primaryColorSheet.getSubimage(0, 0, SPRITE_TILE_WIDTH, SPRITE_TILE_HEIGHT);
-        WorldTile clearTile = new WorldTile(clear, 0);
-        setWorldTile(clearTile);
-
-        BufferedImage white = primaryColorSheet.getSubimage(SPRITE_TILE_WIDTH, 0, SPRITE_TILE_WIDTH, SPRITE_TILE_HEIGHT);
+        BufferedImage white = primaryColorSheet.getSubimage(SPRITE_TILE_WIDTH,  0, SPRITE_TILE_WIDTH, SPRITE_TILE_HEIGHT);
         WorldTile whiteTile = new WorldTile(white, 1);
         setWorldTile(whiteTile);
 
-        BufferedImage grey_0 = primaryColorSheet.getSubimage(0, SPRITE_TILE_HEIGHT, SPRITE_TILE_WIDTH, SPRITE_TILE_HEIGHT);
-        WorldTile grey_0Tile = new WorldTile(grey_0, 3);
-        setWorldTile(grey_0Tile);
+        BufferedImage clear = primaryColorSheet.getSubimage(0,  0, SPRITE_TILE_WIDTH, SPRITE_TILE_HEIGHT);
+        WorldTile clearTile = new WorldTile(clear, 0);
+        setWorldTile(clearTile);
 
-        BufferedImage grey_1 = primaryColorSheet.getSubimage(SPRITE_TILE_WIDTH, SPRITE_TILE_HEIGHT, SPRITE_TILE_WIDTH, SPRITE_TILE_HEIGHT);
-        WorldTile grey_1Tile = new WorldTile(grey_1, 4);
-        setWorldTile(grey_1Tile);
+        BufferedImage black = primaryColorSheet.getSubimage(SPRITE_TILE_WIDTH*2,  0, SPRITE_TILE_WIDTH, SPRITE_TILE_HEIGHT);
+        WorldTile blackTile = new WorldTile(black, 2);
+        setWorldTile(blackTile);
 
-        BufferedImage grey_2 = primaryColorSheet.getSubimage(SPRITE_TILE_WIDTH*2, SPRITE_TILE_HEIGHT, SPRITE_TILE_WIDTH, SPRITE_TILE_HEIGHT);
-        WorldTile grey_2Tile = new WorldTile(grey_2, 5);
-        setWorldTile(grey_2Tile);
+        BufferedImage red = primaryColorSheet.getSubimage(0,  SPRITE_TILE_HEIGHT*2, SPRITE_TILE_WIDTH, SPRITE_TILE_HEIGHT);
+        WorldTile redTile = new WorldTile(red, 3);
+        setWorldTile(redTile);
 
-        BufferedImage grey_3 = primaryColorSheet.getSubimage(SPRITE_TILE_WIDTH*3, SPRITE_TILE_HEIGHT, SPRITE_TILE_WIDTH, SPRITE_TILE_HEIGHT);
-        WorldTile grey_3Tile = new WorldTile(grey_3, 6);
-        setWorldTile(grey_3Tile);
+        BufferedImage orange = primaryColorSheet.getSubimage(0,  SPRITE_TILE_HEIGHT*3, SPRITE_TILE_WIDTH, SPRITE_TILE_HEIGHT);
+        WorldTile orangeTile = new WorldTile(orange, 4);
+        setWorldTile(orangeTile);
 
-        BufferedImage grey_4 = primaryColorSheet.getSubimage(SPRITE_TILE_WIDTH*4, SPRITE_TILE_HEIGHT, SPRITE_TILE_WIDTH, SPRITE_TILE_HEIGHT);
-        WorldTile grey_4Tile = new WorldTile(grey_4, 7);
-        setWorldTile(grey_4Tile);
+        BufferedImage yellow = primaryColorSheet.getSubimage(0,  SPRITE_TILE_HEIGHT*4, SPRITE_TILE_WIDTH, SPRITE_TILE_HEIGHT);
+        WorldTile yellowTile = new WorldTile(yellow, 5);
+        setWorldTile(yellowTile);
 
-        BufferedImage grey_5 = primaryColorSheet.getSubimage(SPRITE_TILE_WIDTH*5, SPRITE_TILE_HEIGHT, SPRITE_TILE_WIDTH, SPRITE_TILE_HEIGHT);
-        WorldTile grey_5Tile = new WorldTile(grey_5, 8);
-        setWorldTile(grey_5Tile);
+        BufferedImage green = primaryColorSheet.getSubimage(0,  SPRITE_TILE_HEIGHT*5, SPRITE_TILE_WIDTH, SPRITE_TILE_HEIGHT);
+        WorldTile greenTile = new WorldTile(green, 6);
+        setWorldTile(greenTile);
 
-        BufferedImage grey_6 = primaryColorSheet.getSubimage(SPRITE_TILE_WIDTH*6, SPRITE_TILE_HEIGHT, SPRITE_TILE_WIDTH, SPRITE_TILE_HEIGHT);
-        WorldTile grey_6Tile = new WorldTile(grey_6, 9);
-        setWorldTile(grey_6Tile);
+        BufferedImage seaGreen = primaryColorSheet.getSubimage(0,  SPRITE_TILE_HEIGHT*6, SPRITE_TILE_WIDTH, SPRITE_TILE_HEIGHT);
+        WorldTile seaGreenTile = new WorldTile(seaGreen, 7);
+        setWorldTile(seaGreenTile);
 
-        BufferedImage grey_7 = primaryColorSheet.getSubimage(SPRITE_TILE_WIDTH*7, SPRITE_TILE_HEIGHT, SPRITE_TILE_WIDTH, SPRITE_TILE_HEIGHT);
-        WorldTile grey_7Tile = new WorldTile(grey_7, 10);
-        setWorldTile(grey_7Tile);
+        BufferedImage blue = primaryColorSheet.getSubimage(0,  SPRITE_TILE_HEIGHT*7, SPRITE_TILE_WIDTH, SPRITE_TILE_HEIGHT);
+        WorldTile blueTile = new WorldTile(blue, 8);
+        setWorldTile(blueTile);
+
+        BufferedImage darkBlue = primaryColorSheet.getSubimage(0,  SPRITE_TILE_HEIGHT*8, SPRITE_TILE_WIDTH, SPRITE_TILE_HEIGHT);
+        WorldTile darkBlueTile = new WorldTile(darkBlue, 9);
+        setWorldTile(darkBlueTile);
+
+        BufferedImage purple = primaryColorSheet.getSubimage(0,  SPRITE_TILE_HEIGHT*9, SPRITE_TILE_WIDTH, SPRITE_TILE_HEIGHT);
+        WorldTile purpleTile = new WorldTile(purple, 10);
+        setWorldTile(purpleTile);
     }
 
     private void setWorldTile(WorldTile tile) {

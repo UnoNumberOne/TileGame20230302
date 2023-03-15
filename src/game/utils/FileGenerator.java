@@ -11,7 +11,7 @@ public class FileGenerator {
     private final String mainDirectory;
 
     private FileGenerator() {
-        mainDirectory = "C:\\Users\\badams\\Desktop\\TileGame\\";
+        mainDirectory = "C:\\Users\\urebustes\\IdeaProjects\\TileGame20230302\\";
     }
 
     public static FileGenerator getFileGenerator() {

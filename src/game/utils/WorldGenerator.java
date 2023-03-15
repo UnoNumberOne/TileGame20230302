@@ -15,21 +15,133 @@ public class WorldGenerator {
 
         worldMap2DArr = new int[worldRows][worldColumns];
 
+
         setWater();
-
-
+        blackBorder();
+        SeedDrop();
+        buildIsland();
+        setLand();
 
         FileGenerator.getFileGenerator().createFile(WORLD_FULL_DIRECTORY_NAME, FileGenerator.getFileGenerator().intArr2DToString(worldMap2DArr));
 
     }
 
-    private void setWater() {
-        for(int r = 0; r < worldMap2DArr.length; r++) {
-            for(int c = 0; c < worldMap2DArr[r].length; c++) {
-                worldMap2DArr[r][c] = 9;
+    private void setWater()
+    {
+        for(int r = 0; r < worldMap2DArr.length; r++)
+        {
+            for(int c = 0; c < worldMap2DArr[r].length; c++)
+            {
+                worldMap2DArr[r][c] = getWaterIndex();
             }
         }
     }
+
+    public void setLand()
+    {
+        for(int r = 0; r < worldMap2DArr.length; r++)
+        {
+            for (int c = 0; c < worldMap2DArr[r].length; c++)
+            {
+                if(worldMap2DArr[r][c] == 1)
+                {
+                    worldMap2DArr[r][c] = getGrassIndex();
+                }
+            }
+        }
+    }
+    private int getGrassIndex()
+    {
+        return (int)((Math.random() * (6-4)) + 6);
+    }
+    public int getWaterIndex()
+    {
+        return (int)((Math.random() * (10-8)) + 8);
+    }
+
+
+    private void buildIsland() {
+        for (int r = 0; r < worldMap2DArr.length; r++)
+        {
+            for (int c = 0; c < worldMap2DArr[r].length; c++)
+            {
+                if (worldMap2DArr[r][c] == 5)
+                {
+                    for (int i = -7; i <= 7; i++)
+                    {
+                        for (int j = -7; j <= 7; j++)
+                        {
+                            if(j > -4 && j < 4 && i> -4 && i< 4 )
+                            {
+                                if((Math.random() < .99))
+                                {
+                                    worldMap2DArr[r + i][c + j] = 1;
+                                }
+                            }
+                            else
+                            {
+                                if((Math.random() < .70))
+                                {
+                                    worldMap2DArr[r + i][c + j] = 1;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    /*
+                    for(int i = -7; i <= 7; i++)
+                    {
+                        for(int j = -7; j <= 7; j++)
+                        {
+                            if(j > -4 && j < 4 && i > -4 && i < 4)
+                            {
+                                if((Math.random() < .99))
+                                {
+                                    worldMap2DArr[r + i][c +j] = 1;
+                                }
+                            }
+                            else
+                            {
+                                if((Math.random() < .70))
+                                {
+                                    worldMap2DArr[r +  i][c + i] = 1;
+                                }
+
+                     */
+
+    private void blackBorder()
+    {
+        for(int r = 0; r < worldMap2DArr.length; r++)
+        {
+            for(int c = 0; c < worldMap2DArr.length; c++)
+            {
+                if(r == 0 || c == 0 || r == worldMap2DArr[r].length - 1 || c == worldMap2DArr[c].length - 1)
+                {
+                    worldMap2DArr[r][c] = 2;
+                }
+            }
+        }
+    }
+
+    public void SeedDrop()
+    {
+        for(int count = 0; count <= 5; count++)
+        {
+            int dropSeedR = (int)(Math.random()*(55-10)+10);
+            int dropSeedL = (int)(Math.random()*(55-10)+10);
+            worldMap2DArr[dropSeedL][dropSeedR] = 5;
+        }
+    }
+
+
 
     public String getWORLD_FULL_DIRECTORY_NAME() {
         return WORLD_FULL_DIRECTORY_NAME;

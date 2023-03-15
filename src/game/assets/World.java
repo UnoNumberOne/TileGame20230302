@@ -25,7 +25,6 @@ public class World {
                                       {1, 7, 1, 7, 1},
                                       {1, 1, 7, 1, 1},
                                       {1, 1, 1, 1, 1}};
-
      */
 
     public World(int worldRows, int worldCols) {
@@ -44,8 +43,8 @@ public class World {
     }
 
     public void render(Graphics g) {
-        for(int r = 0; r <  worldTileArray.length; r++) {
-            for(int c = 0; c < worldTileArray[r].length; c++) {
+        for (int r = 0; r < worldTileArray.length; r++) {
+            for (int c = 0; c < worldTileArray[r].length; c++) {
                 getWorldTile(r, c).render(g, c * WorldTile.defaultWorldTileWidth, r * WorldTile.defaultWorldTileHeight);
             }
         }
@@ -53,7 +52,7 @@ public class World {
 
     public WorldTile getWorldTile(int r, int c) {
         WorldTile tile = imageHandler.getWorldTile(worldTileArray[r][c]);
-        if(tile == null) {
+        if (tile == null) {
             return imageHandler.getWorldTile(1);
         }
         return tile;
@@ -65,32 +64,10 @@ public class World {
 
         worldTileArray = new int[worldRows][worldCols];
 
-        for(int r = 0; r < worldRows; r++) {
-            for(int c = 0; c < worldCols; c++) {
+        for (int r = 0; r < worldRows; r++) {
+            for (int c = 0; c < worldCols; c++) {
                 worldTileArray[c][r] = FileToStringLoader.parseInt(tokens[r + c * worldCols]);
             }
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
