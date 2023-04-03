@@ -35,14 +35,16 @@ public class GameHandler {
 
     private void init() {
         display = new Display(GAME_TITLE, SCREEN_HEIGHT, SCREEN_WIDTH);
+        display.getFrame().addKeyListener(KeyManager.getKeyManager());
 
         currentState = new GameState();
 
         run();
     }
 
-    private void tick() {
-
+    private void tick()
+    {
+        currentState.tick();
     }
 
     private void render() {

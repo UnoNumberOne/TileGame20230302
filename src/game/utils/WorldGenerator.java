@@ -2,7 +2,7 @@ package game.utils;
 
 public class WorldGenerator {
 
-    private static int worldRows, worldColumns;
+    public static int worldRows, worldColumns;
     private final long TIME_STAMP = System.nanoTime() % 1000000;
     private final String WORLD_FILE_NAME = "thisIsMyFileName_" + TIME_STAMP + ".txt";
     private final String WORLD_DIRECTORY = "res\\worlds\\";
@@ -93,29 +93,6 @@ public class WorldGenerator {
         }
     }
 
-
-
-
-    /*
-                    for(int i = -7; i <= 7; i++)
-                    {
-                        for(int j = -7; j <= 7; j++)
-                        {
-                            if(j > -4 && j < 4 && i > -4 && i < 4)
-                            {
-                                if((Math.random() < .99))
-                                {
-                                    worldMap2DArr[r + i][c +j] = 1;
-                                }
-                            }
-                            else
-                            {
-                                if((Math.random() < .70))
-                                {
-                                    worldMap2DArr[r +  i][c + i] = 1;
-                                }
-
-                     */
 
     private void blackBorder()
     {

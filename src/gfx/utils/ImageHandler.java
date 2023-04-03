@@ -34,7 +34,7 @@ public class ImageHandler {
 
      */
     private void createWorldTiles() {
-        BufferedImage primaryColorSheet = ImageLoader.loadImage("/primaryColorSheet.png");
+        BufferedImage primaryColorSheet = ImageLoader.loadImage("/primary color spritesheet.png");
 
         BufferedImage white = primaryColorSheet.getSubimage(SPRITE_TILE_WIDTH,  0, SPRITE_TILE_WIDTH, SPRITE_TILE_HEIGHT);
         WorldTile whiteTile = new WorldTile(white, 1);
@@ -74,6 +74,7 @@ public class ImageHandler {
 
         BufferedImage darkBlue = primaryColorSheet.getSubimage(0,  SPRITE_TILE_HEIGHT*8, SPRITE_TILE_WIDTH, SPRITE_TILE_HEIGHT);
         WorldTile darkBlueTile = new WorldTile(darkBlue, 9);
+        darkBlueTile.setSolid(true);
         setWorldTile(darkBlueTile);
 
         BufferedImage purple = primaryColorSheet.getSubimage(0,  SPRITE_TILE_HEIGHT*9, SPRITE_TILE_WIDTH, SPRITE_TILE_HEIGHT);

@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be850abd-3620-48a3-b410-5ba063d761c0" name="Changes" comment="file generation">
+    <list default="true" id="be850abd-3620-48a3-b410-5ba063d761c0" name="Changes" comment="FINISHED">
+      <change afterPath="$PROJECT_DIR$/src/game/assets/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/utils/KeyManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gfx/utils/CameraHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/primaryColorSheet.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/assets/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/assets/World.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/utils/FileGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/utils/FileGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/utils/FileToStringLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/utils/FileToStringLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/states/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/states/GameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/utils/GameHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/utils/GameHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/utils/WorldGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/utils/WorldGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gfx/assets/WorldTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gfx/assets/WorldTile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gfx/utils/ImageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gfx/utils/ImageHandler.java" afterDir="false" />
@@ -92,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677785322773</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="FINISHED">
+      <created>1678900750697</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678900750697</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,7 +118,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="day 1" />
     <MESSAGE value="file generation" />
-    <option name="LAST_COMMIT_MESSAGE" value="file generation" />
+    <MESSAGE value="FINISHED" />
+    <option name="LAST_COMMIT_MESSAGE" value="FINISHED" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
